@@ -1,0 +1,3 @@
+/et-mt_home_stud/as16734/Desktop/parallel_worlds-master/parallel_worlds_3/Debug/CMakeFiles/rebuild_cache.dir
+/et-mt_home_stud/as16734/Desktop/parallel_worlds-master/parallel_worlds_3/Debug/CMakeFiles/edit_cache.dir
+/et-mt_home_stud/as16734/Desktop/parallel_worlds-master/parallel_worlds_3/Debug/CMakeFiles/parallel_worlds_3.dir
