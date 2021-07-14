@@ -32,15 +32,16 @@ void __kernel convolution(
 	int coords_x; //coords for accessing the image
 	int coords_y;
 
-	if(x<w && y<h){
+	if(x<w && y<h && x>0 && y>0){
 	for(int i = -halfWidth; i <= halfWidth; i++){
 		coords_y = y + i;
 		 for(int j = -halfWidth; j <= halfWidth; j++){
 			coords_x = x + j;
-			if(coords_x<w && coords_y<h){
-			r += ARRC(inImg, coords_x, coords_y, w, 0) * filter[filterIdx++];
-			g += ARRC(inImg, coords_x, coords_y, w, 1) * filter[filterIdx++];
-			b += ARRC(inImg, coords_x, coords_y, w, 2) * filter[filterIdx++];
+			if(coords_x<w && coords_y<h && coords_x>0 && coords_y>0){
+			r += ARRC(inImg, coords_x, coords_y, w, 0) * filter[filterIdx];
+			g += ARRC(inImg, coords_x, coords_y, w, 1) * filter[filterIdx];
+			b += ARRC(inImg, coords_x, coords_y, w, 2) * filter[filterIdx];
+				filterIdx++;
 				}
 				else{ 
 				filterIdx++;
